@@ -1,0 +1,138 @@
+MultiCoNER
+
+BiLSTM (Facebook Fasttext Emb)
+F1:  57.34
+              precision    recall  f1-score   support
+
+        CORP       0.57      0.58      0.57       257
+          CW       0.38      0.41      0.39       232
+         GRP       0.57      0.62      0.59       241
+         LOC       0.66      0.64      0.65       237
+         PER       0.59      0.62      0.61       248
+        PROD       0.61      0.61      0.61       315
+
+   micro avg       0.56      0.58      0.57      1530
+   macro avg       0.56      0.58      0.57      1530
+weighted avg       0.57      0.58      0.57      1530
+
+BiLSTM-CRF (Facebook Fasttext Emb)
+F1:  57.58
+              precision    recall  f1-score   support
+
+        CORP       0.61      0.61      0.61       252
+          CW       0.35      0.35      0.35       224
+         GRP       0.55      0.63      0.59       245
+         LOC       0.63      0.63      0.63       218
+         PER       0.62      0.62      0.62       267
+        PROD       0.63      0.62      0.62       324
+
+   micro avg       0.57      0.58      0.58      1530
+   macro avg       0.56      0.58      0.57      1530
+weighted avg       0.57      0.58      0.58      1530
+
+BERT+BiLSTM (IndicBERT) (Facebook Fasttext Emb)
+F1:  51.77
+              precision    recall  f1-score   support
+
+        CORP       0.47      0.58      0.52       269
+          CW       0.28      0.36      0.32       207
+         GRP       0.50      0.51      0.51       250
+         LOC       0.57      0.68      0.62       220
+         PER       0.66      0.80      0.72       259
+        PROD       0.39      0.46      0.42       325
+
+   micro avg       0.48      0.57      0.52      1530
+   macro avg       0.48      0.57      0.52      1530
+weighted avg       0.48      0.57      0.52      1530
+
+
+BERT (buet)
+F1:  46.00
+		precision    recall  f1-score   support
+
+      B-CORP       0.48      0.36      0.41       571
+        B-CW       0.39      0.18      0.25       383
+       B-GRP       0.50      0.43      0.46       429
+       B-LOC       0.51      0.51      0.51       522
+       B-PER       0.52      0.50      0.51       432
+      B-PROD       0.43      0.32      0.37       551
+      I-CORP       0.60      0.45      0.51       457
+        I-CW       0.44      0.19      0.27       444
+       I-GRP       0.53      0.54      0.54       586
+       I-LOC       0.60      0.30      0.40       244
+       I-PER       0.50      0.64      0.56       650
+      I-PROD       0.49      0.16      0.24       268
+           O       0.92      0.97      0.95     20622
+
+    accuracy                           0.46     26159
+   macro avg       0.53      0.43      0.46     26159
+weighted avg       0.53      0.55      0.44     26159
+
+
+BERT (mBERT)
+F1:  71.84
+ 		precision    recall  f1-score   support
+
+      B-CORP       0.71      0.64      0.67      1137
+        B-CW       0.65      0.54      0.59       913
+       B-GRP       0.67      0.68      0.67       932
+       B-LOC       0.76      0.79      0.77      1022
+       B-PER       0.82      0.85      0.84       911
+      B-PROD       0.61      0.60      0.60      1198
+      I-CORP       0.71      0.67      0.69      1202
+        I-CW       0.70      0.59      0.64      1035
+       I-GRP       0.74      0.76      0.75      1411
+       I-LOC       0.65      0.70      0.67       537
+       I-PER       0.85      0.87      0.86      1222
+      I-PROD       0.57      0.64      0.61       640
+           O       0.97      0.98      0.98     40153
+
+    accuracy                           0.72     52313
+   macro avg       0.73      0.72      0.72     52313
+weighted avg       0.72      0.72      0.72     52313
+
+BERT (IndicBERT)
+F1:  72.92
+		precision    recall  f1-score   support
+
+      B-CORP       0.75      0.70      0.72       432
+        B-CW       0.63      0.53      0.58       317
+       B-GRP       0.68      0.67      0.67       325
+       B-LOC       0.77      0.78      0.78       406
+       B-PER       0.80      0.85      0.82       325
+      B-PROD       0.66      0.67      0.67       428
+      I-CORP       0.77      0.67      0.72       358
+        I-CW       0.71      0.49      0.58       378
+       I-GRP       0.76      0.77      0.76       490
+       I-LOC       0.70      0.62      0.66       210
+       I-PER       0.85      0.91      0.88       529
+      I-PROD       0.67      0.66      0.66       225
+           O       0.97      0.98      0.98     19098
+
+    accuracy                           0.73     23521
+   macro avg       0.75      0.71      0.73     23521
+weighted avg       0.73      0.73      0.73     23521
+
+BERT (SagorBERT)
+F1:  67.92
+		precision    recall  f1-score   support
+
+      B-CORP       0.68      0.58      0.63       670
+        B-CW       0.53      0.43      0.47       541
+       B-GRP       0.65      0.64      0.65       588
+       B-LOC       0.73      0.74      0.73       652
+       B-PER       0.76      0.74      0.75       563
+      B-PROD       0.55      0.53      0.54       677
+      I-CORP       0.77      0.63      0.69       761
+        I-CW       0.65      0.57      0.61       661
+       I-GRP       0.74      0.78      0.76      1062
+       I-LOC       0.65      0.63      0.64       354
+       I-PER       0.83      0.81      0.82       764
+      I-PROD       0.61      0.53      0.57       392
+           O       0.96      0.98      0.97     29825
+
+    accuracy                           0.68     37510
+   macro avg       0.70      0.66      0.68     37510
+weighted avg       0.70      0.68      0.69     37510
+
+
